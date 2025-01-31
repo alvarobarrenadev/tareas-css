@@ -1,0 +1,29 @@
+*1. El primer elemento `<a>` hijo de `<p>`.
+p > a:first-of-type
+
+*2. Selecciona los checkbox que estén marcados, hijos de un `<form>`.
+form > input[type="checkbox"]:checked
+
+*3. Selecciona el último `<p>` que sea descendiente de `<article>`.
+article > p:last-of-type
+
+*4. Seleccionar el segundo hijo de un elemento `section`.
+section > :nth-child(2) /* Igual que poner section > *:nth-child(2) */
+
+*5. Seleccionar los hijos pares de un elemento `ol`.
+ol > :nth-child(even)
+
+*6. Seleccionar el antepenúltimo `li` de un `ul` de longitud indefinida.
+ul > li:nth-last-child(3)
+
+*7. El segundo `<a>` de dentro de un `<p>`.
+p > a:nth-of-type(2)
+
+*8. Los `button` que sean hijos únicos.
+button:only-child
+
+*9. Los `span` que sean primeros hijos de un `p`.
+p > span:first-child
+
+*10. Penúltimo hijo de `body`.
+body > :nth-last-child(2)

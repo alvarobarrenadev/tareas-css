@@ -1,0 +1,51 @@
+/* La fuente base de la página debe ser: color negro, tipo Arial, tamaño 0.9em, interlineado 1.4em. */
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4em;
+
+}
+
+/* Los elementos <h2> de .articulo se muestran en color #CC6600, con un tamaño de letra de 1.6em, un interlineado de 1.2em. */
+div.articulo h2 {
+    color: #CC6600;
+    font-size: 1.6em;
+    line-height: 1.2em;
+}
+
+/* Los enlaces del #menu deben ser de color blanco y tamaño de letra 1.3em. Si podéis, ponedle también el color azul al menú. */
+div#menu {
+    background-color: blue;
+    
+}
+
+div#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* El tamaño del texto de todos los contenidos de #lateral debe ser de 0.9em. La fecha de cada noticia debe mostrarse en color gris claro #999. */
+div#lateral {
+    font-size: 0.9em;
+}
+
+span.fecha {
+    color: #999;
+}
+
+/* El elemento <h3> de #noticias debe mostrarse de color #003366. */
+div#noticias h3 a {
+    color: #003366;
+}
+
+/* El texto del elemento #publicidad es de color gris oscuro #555 y todos los enlaces de color #CC6600. */
+#publicidad {
+    color: #555
+}
+
+/* Los enlaces contenidos dentro de .articulo son de color #CC6600. */
+div.articulo a {
+    color: #CC6600;
+    text-decoration: none;
+}

@@ -1,0 +1,130 @@
+/* Ejercicio 1: Eliminar todos los márgenes y rellenos de los elementos de la página. */
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/* Ejercicio 2: Cambiar el color de fondo de los elementos <div> con la clase "box" a amarillo. */
+div.box {
+  background-color: yellow;
+}
+
+/* Ejercicio 3: Cambiar el color del texto de todos los párrafos <p> a azul. */
+p {
+  color: blue;
+}
+
+/* Ejercicio 4: Aplicar un borde redondeado y un fondo gris con texto blanco a los botones con clase "btn". */
+button.btn {
+  background-color: gray;
+  color: white;
+  padding: 2px;
+}
+
+/* Ejercicio 5: Cambiar el color de fondo del encabezado con ID "header" a verde. */
+div#header {
+  background-color: green;
+}
+
+/* Ejercicio 6: Aplicar un margen de 15px a todos los elementos con la clase "box". */
+.box {
+  margin:15px;
+}
+
+/* Ejercicio 7: Aplicar un borde rojo a los <div> con la clase "alert". */
+div.alert {
+  border: 2px solid red;
+}
+
+/* Ejercicio 8: Aplicar un borde verde a los campos de entrada <input> que tengan el atributo "required". */
+input[required] {
+  border: 2px solid green;
+}
+
+/* Ejercicio 9: Cambiar el color del texto de los enlaces con el atributo target="_blank" a morado y eliminar el subrayado. */
+a[target="_blank"] {
+  color: purple;
+  text-decoration: none;
+}
+
+/* Ejercicio 10: Aplicar un subrayado a los enlaces que contengan la palabra "blog" en su URL. */
+a[href*="blog"] {
+  text-decoration: underline;
+}
+
+/* Ejercicio 11: Cambiar el color de fondo de las listas <ul> y <ol> a gris claro. */
+ul, ol {
+  background-color: gainsboro;
+}
+
+/* Ejercicio 12: Aplicar un estilo de fuente cursiva a los elementos <li> dentro de una lista ordenada (<ol>). */
+ol li {
+  font-style: italic;
+}
+
+/* Ejercicio 13: Cambiar el color de texto de los botones con clase "primary" dentro del formulario con ID "main-form". */
+main-form.primary {
+  color: orange;
+}
+
+/* Ejercicio 14: Aplicar un relleno de 20px a los <div> con la clase "container" y el atributo data-role="admin". */
+div.container[data-role="admin"] {
+  padding: 20px;
+}
+
+/* Ejercicio 15: Cambiar el color de fondo de los <div> con la clase "alert" dentro de un contenedor con clase "container". */
+.container div.alert {
+  background-color: black;
+}
+
+/* Ejercicio 16: Aplicar un borde discontinuo negro a los botones con clase "secondary". */
+button.secondary {
+  border: 2px dashed black;
+}
+
+/* Ejercicio 17: Estilizar todos los enlaces que tengan el atributo "target" con un color de texto naranja. */
+a[target] {
+  color: orange;
+}
+
+/* Ejercicio 18: Cambiar el color de texto de los campos de entrada cuyo atributo "placeholder" contenga "obligatorio" a rosa. */
+input[placeholder*="obligatorio"] {
+  background-color: pink;
+}
+
+/* Ejercicio 19: Aplicar un borde negro de 4px a los <div> con clase "box" que sean hijos directos del <body>. */
+body div.box {
+  border: 4px solid black;
+}
+
+/* Ejercicio 20: Cambiar el color de fondo de las etiquetas <a> cuyo atributo href termine en ".html" a amarillo. */
+a[href$=".html"] {
+  background-color: yellow;
+}
+
+/* Ejercicio 21: Aplicar un estilo de fuente cursiva a los enlaces que contengan la subcadena "example" en su href. */
+a[href*="example"] {
+  font-style: italic;
+}
+
+/* Ejercicio 22: Cambiar el estilo de los botones que están dentro del formulario con ID "main-form" a fondo azul y texto blanco. */
+#main-form button{
+  background-color: blue;
+  color: white;
+}
+
+/* Ejercicio 23: Cambiar el color de fondo y el texto a blanco para los elementos con clase "container" y atributo data-role que empiece con "adm". */
+.container, div.container[data-role^="adm"] {
+  background-color: purple;
+  color: white;
+}
+
+/* Ejercicio 24: Aplicar un sombreado gris oscuro a los <div> con clase combinada "box alert". */
+.box.alert {
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
+}
+
+/* Ejercicio 25: Cambiar el tamaño de fuente de los párrafos inmediatamente precedidos por un <div> con ID "footer". */
+div#footer {
+  font-size: 30px;
+}
