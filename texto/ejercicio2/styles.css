@@ -19,11 +19,11 @@ h2 {
 }
 
 /* Los títulos de los elementos de las listas aparecen en negrita. */
-ul li {
+li {
     font-weight: bold;
 }
 
 /* El contenido de los elementos de las listas, aunque están etiquetados como <strong>, no se visualizan en negrita. */
-strong {
+li strong {
     font-weight: normal;
 }

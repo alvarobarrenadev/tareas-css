@@ -25,10 +25,13 @@ h2 {
 }
 
 /* El contenido de las listas debe aparecer en cursiva y en negrita. Sin embargo, el contenido etiquetado como <strong> no debe aparecer en negrita, pero debe aparecer en versalitas. */
-li ul {
+li {
     font-style: italic;
+    font-weight: bold;
 }
 
-strong {
+li strong {
+    font-weight: normal;
     font-variant: small-caps;
+    font-style: normal;
 }
