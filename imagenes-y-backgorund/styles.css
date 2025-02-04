@@ -1,0 +1,97 @@
+/* Ejercicio 1 */
+div.ejercicio1.colombia {
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, 
+        yellow 33.33%, /* Amarillo desde el 0% hasta el 33.33% */
+        blue 33.33% 66.66%, /* Azul desde el 33.33% hasta el 66.66% */
+        red 66.66% /* Rojo desde el 66.66% hasta el 100% */
+    );
+}
+
+div.ejercicio1.francia {
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, red 33.33%, white 33.33% 66.66%, blue 33.33%);
+}
+
+div.ejercicio1.italia {
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, green 33.33%, white 33.33% 66.66%, red 33.33%);
+}
+
+div.ejercicio1.alemania {
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    color: white;
+    background: linear-gradient(to bottom, black 33.33%, red 33.33% 66.66%, yellow 66.66%);
+}
+
+div.ejercicio1.japon{
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: radial-gradient(circle at center, 
+        red 30%,  /* Círculo rojo con un radio del 30% */
+        white 31%  /* Color blanco después del círculo rojo */
+    );
+}
+
+div.ejercicio1.polonia {
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+/* Ejercicio 2.1 */
+div.ejercicio2.globos {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 350px;
+    background-size: 100%;
+    background-color: #4f83e3;
+    background-image: url(img/balloons.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+div.ejercicio2.globos h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Ejercicio 2.2 */
+div.ejercicio2.estrellas {
+    width: 150px;
+    border: 5px solid #8cb0f3;
+    padding: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/star.png), url(img/star.png), url(img/star.png), url(img/star.png);
+    background-repeat: no-repeat;
+    background-position: 5% 50%, 95% 25%, 95% 50%, 95% 75%; /* "X"(izquierda-derecha) "Y"(arriba-abajo) */
+    background-size: 25px, 25px, 25px, 25px;
+}
+
+div.ejercicio2.estrellas h2 {
+    text-align: center;
+    margin: 0;
+}
