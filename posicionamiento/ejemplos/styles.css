@@ -1,0 +1,68 @@
+/* Ejemplo 1 */
+div.ejemplo1 {
+    border: 2px solid rgb(200, 200, 200);
+    background-color: rgb(229, 228, 225);
+    padding: 15px 5px;
+}
+
+span.anterior {
+    float: left;
+    font-weight: bold;
+}
+
+span.siguiente {
+    float: right;
+    font-weight: bold;
+}
+
+.ejemplo1::after {
+    content: "";  /* Inserta un elemento vacío después del contenido flotante */
+    display: block;  /* Lo convierte en un bloque para que afecte la altura del contenedor */
+    
+    /*
+       ⚠️ IMPORTANTE: 
+       Sin esta línea, el contenedor no reconocerá los elementos flotantes y colapsará a 0px de altura.
+       
+       ✅ "clear: both;" hace que este elemento actúe como una "barrera" después de los elementos flotantes,
+          forzando al contenedor a ajustar su altura para incluirlos correctamente.
+    */
+    clear: both;
+}
+
+/* Ejemplo 2 */
+div.ejemplo2 {
+    text-align: center;
+    margin: 0;
+}
+
+div.ejemplo2 p.principal {
+    clear: both;
+    padding: 60px;
+}
+
+div.ejemplo2 p.izquierdo,
+div.ejemplo2 p.derecho {
+    width: 250px;
+    height: 100px;
+    line-height: 40px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 3px dotted rgb(34, 34, 34);
+    background-color: rgb(157, 161, 162);
+}
+
+div.ejemplo2 p.izquierdo {
+    text-align: left;
+    float: left;
+}
+
+div.ejemplo2 p.derecho {
+    text-align: right;
+    float: right;
+}
+
+div.ejemplo2 p.pie{
+    background-color: rgb(157, 161, 162);
+    height: 50px;
+    line-height: 50px;
+}
