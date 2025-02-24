@@ -1,0 +1,51 @@
+header, main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header.ejercicio7 h1 {
+    font-size: 20px;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.travel {
+    width: 33.33%;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+  
+.travel__title{
+    font-size: 14px;
+    text-align: center;
+}
+  
+.travel__description {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.travel:first-of-type {
+    background-color: #8cbbba;
+}
+  
+.travel:nth-of-type(2) {
+    background-color: #c1eab8;
+}
+
+.travel:nth-of-type(3) {
+    background-color: #becde1;
+}
+
+.travelContainer {
+    display: flex;
+    align-items: stretch;
+}
+
+.travel__img {
+    max-width: 100%;
+    aspect-ratio: 20/9;
+}

@@ -1,0 +1,83 @@
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header > h1 {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+header nav ul {
+    margin: 0;
+    background-color: #cccccc;
+    padding: 10px;
+    padding-left: 0;
+    text-decoration: none; /* NO OLVIDAR */
+    list-style: none; /* NO OLVIDAR */
+    display: flex;
+    gap: 20px;
+}
+
+
+header nav ul li a:hover {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none; /* NO OLVIDAR */
+    color: #5f5e5e;
+}
+
+/* EJERCICIO 1 */
+.ejercicio1 nav ul {
+    justify-content: left;
+}
+
+/* EJERCICIO 2 */
+.ejercicio2 nav ul {
+    justify-content: center;
+}
+/* EJERCICIO 3 */
+.ejercicio3 nav ul {
+    justify-content: center;
+}
+
+/* EJERCICIO 4 */
+.ejercicio4 nav {
+    max-width: 200px;
+}
+
+header.ejercicio4 nav ul {
+    flex-direction: column;
+}
+
+/* EJERCICIO 4 */
+.ejercicio4 nav {
+    max-width: 200px;
+}
+
+header.ejercicio4 nav ul {
+    display: flex;
+    flex-direction: column; /* Asegura alineación vertical */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ejercicio4 nav ul li {
+    display: flex; /* Permite que los enlaces ocupen todo el espacio */
+    width: 100%; /* Se asegura de que el `li` use todo el ancho */
+}
+
+.ejercicio4 nav ul li a {
+    flex: 1;  /* Hace que el enlace ocupe todo el espacio dentro del `li` */
+    padding: 10px;
+    text-decoration: none;
+    color: #5f5e5e;
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+}
