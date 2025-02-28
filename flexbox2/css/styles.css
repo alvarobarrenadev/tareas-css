@@ -1,0 +1,255 @@
+/* CAJAS */
+div.caja1 {
+    background-color: #58b99d;
+}
+
+div.caja2 {
+    background-color: #5296d5;
+}
+
+div.caja3 {
+    background-color: #925cb1;
+}
+
+div.caja4 {
+    background-color: #38485c;
+}
+
+div.caja5 {
+    background-color: #eac645;
+}
+
+div.caja6 {
+    background-color: #d8833b;
+}
+
+div.caja7 {
+    background-color: #d65745;
+}
+
+div.caja8 {
+    background-color: #bec3c7;
+}
+
+div.caja9 {
+    background-color: #65c97a;
+}
+
+div.caja10 {
+    background-color: #4a9e86;
+}
+
+/* EJERCICIO 1 - Intro*/
+section.ejercicio1 {
+    border: 3px solid red;
+    width: 550px;
+    height: 250px;
+    display: flex;
+}
+
+section.ejercicio1 div {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* EJERCICIO 2 - Flex-direction*/
+section.ejercicio2 {
+    border: 3px solid red;
+    width: 550px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section.ejercicio2 div {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* EJERCICIO 3 - Flex-wrap*/
+section.ejercicio3 {
+    border: 3px solid red;
+    width: 550px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.ejercicio3 div {
+    width: 163px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* EJERCICIO 4 - Flex-ordering*/
+section.ejercicio4 {
+    border: 3px solid red;
+    width: 550px;
+    display: flex;
+}
+
+section.ejercicio4 div {
+    width: 165px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.ejercicio4 div.caja1 {
+    order: 2;
+}
+
+section.ejercicio4 div.caja2 {
+    order: 3;
+}
+
+section.ejercicio4 div.caja3 {
+    order: 4;
+}
+
+section.ejercicio4 div.caja4 {
+    order: 5;
+}
+
+section.ejercicio4 div.caja5 {
+    order: 1;
+}
+
+section.ejercicio4 div.caja6 {
+    order: 10;
+}
+
+section.ejercicio4 div.caja7 {
+    order: 6;
+}
+
+section.ejercicio4 div.caja8 {
+    order: 7;
+}
+
+section.ejercicio4 div.caja9 {
+    order: 8;
+}
+
+section.ejercicio4 div.caja10 {
+    order: 9;
+}
+
+/* EJERCICIO 5 - Alignment and centering */
+section.ejercicio5 {
+    border: 3px solid red;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.ejercicio5 div {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.ejercicio5 div:last-of-type {
+    margin-bottom: 0;
+}
+
+/* EJERCICIO 6 */
+section.ejercicio6 {
+    border: 3px solid red;
+    width: 550px;
+    height: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+section.ejercicio6 div {
+    color: white;
+    padding: 2px 1px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+section.ejercicio6 div:nth-child(1) {
+    font-size: 18px;
+}
+
+section.ejercicio6 div:nth-child(3) {
+    font-size: 40px;
+}
+
+section.ejercicio6 div:nth-child(4) {
+    font-size: 58px;
+}
+
+section.ejercicio6 div:nth-child(5) {
+    font-size: 10px;
+}
+
+section.ejercicio6 div:nth-child(10) {
+    font-size: 34px;
+}
+
+/* EJERCICIO 7 */
+section.ejercicio7 {
+    border: 3px solid red;
+    width: 550px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section.ejercicio7 div {
+    width: 173px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* EJERCICIO 8: Align-self */
+section.ejercicio8 {
+    border: 3px solid red;
+    width: 550px;
+    height: 250px;
+    display: flex;
+    align-items: start;
+}
+
+section.ejercicio8 div {
+    width: 40px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.ejercicio8 div:nth-child(2) {
+    align-self: stretch;
+}
+
+section.ejercicio8 div:nth-child(6) {
+    align-self: center;
+}
+
+section.ejercicio8 div:nth-child(9) {
+    align-self: flex-end;
+}
