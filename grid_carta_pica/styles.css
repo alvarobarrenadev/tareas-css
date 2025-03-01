@@ -1,0 +1,62 @@
+.cards-container {
+  display: grid;
+  /* Tres columnas, una por carta */
+  grid-template-columns: repeat(3, 150px);
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+/* Estilos generales de cada carta */
+.card {
+  width: 150px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  font-family: sans-serif;
+}
+
+/* Estilo para las esquinas superior izquierda e inferior derecha */
+.top-left,
+.bottom-right {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.top-left {
+  top: 5px;
+  left: 5px;
+}
+
+.bottom-right {
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(180deg);
+  /* Voltea el número de la esquina inferior */
+}
+
+/* Contenedor para los símbolos centrales */
+.center-suits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.center-suits span {
+  font-size: 24px;
+  margin: 5px;
+}
+
+/* Clase para picas (♠) */
+.spade {
+  color: black;
+}
