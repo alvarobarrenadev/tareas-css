@@ -1,0 +1,366 @@
+/* EJERCICIO 1 */
+.ejercicio1 {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1px;
+    text-align: center;
+}
+
+.ejercicio1 div {
+    background-color: #5f717d;
+    padding: 10px;
+    color: white;
+}
+
+/* EJERCICIO 2 */
+.ejercicio2 {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1px;
+    text-align: center;
+    grid-template-areas: 
+    "celda1 celda1 celda1"
+    "celda2 celda3 celda4"
+    "celda5 celda6 celda7";
+}
+
+.ejercicio2 div {
+    background-color: #5f717d;
+    padding: 10px;
+    color: white;
+}
+
+.ejercicio2 div.celda1 {
+    grid-area: celda1;
+}
+
+/* EJERCICIO 3 */
+.ejercicio3 {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 100px repeat(2, 150px);
+    gap: 1px;
+    text-align: center;
+    grid-template-areas: 
+    "celda1 celda1 celda1"
+    "celda2 celda3 celda4"
+    "celda2 celda5 celda6";
+}
+
+.ejercicio3 div {
+    background-color: #5f717d;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ejercicio3 div.celda1 {
+    grid-area: celda1;
+}
+
+.ejercicio3 div.celda2 {
+    grid-area: celda2;
+}
+
+.ejercicio3 div.celda3 {
+    grid-area: celda3;
+}
+
+.ejercicio3 div.celda4 {
+    grid-area: celda4;
+}
+
+.ejercicio3 div.celda5 {
+    grid-area: celda5;
+}
+
+.ejercicio3 div.celda6 {
+    grid-area: celda6;
+}
+
+/* EJERCICIO 4 */
+.ejercicio4 {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 100px repeat(2, 150px);
+    gap: 1px;
+    text-align: center;
+    grid-template-areas: 
+    "celda1 celda1 celda1"
+    "celda2 celda3 celda4"
+    "celda2 celda5 celda6";
+}
+
+.ejercicio4 div {
+    background-color: #5f717d;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.ejercicio4 div.celda1 {
+    grid-area: celda1;
+}
+
+.ejercicio4 div.celda2 {
+    grid-area: celda2;
+}
+
+.ejercicio4 div.celda3 {
+    grid-area: celda3;
+}
+
+.ejercicio4 div.celda4 {
+    grid-area: celda4;
+}
+
+.ejercicio4 div.celda5 {
+    grid-area: celda5;
+}
+
+.ejercicio4 div.celda6 {
+    grid-area: celda6;
+}
+
+/* EJERCICIO 5 */
+.ejercicio5 {
+    display: grid;
+    gap: 1px;
+    text-align: center;
+    grid-template-areas: 
+    "celda1 celda1 celda1 celda2"
+    "celda3 celda4 celda5 celda2";
+}
+
+.ejercicio5 div {
+    background-color: #5f717d;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.ejercicio5 div.celda1 {
+    grid-area: celda1;
+}
+
+.ejercicio5 div.celda2 {
+    grid-area: celda2;
+}
+
+.ejercicio5 div.celda3 {
+    grid-area: celda3;
+}
+
+.ejercicio5 div.celda4 {
+    grid-area: celda4;
+}
+
+.ejercicio5 div.celda5 {
+    grid-area: celda5;
+}
+
+/* EJERCICIO 6 */
+.ejercicio6 {
+    display: grid;
+    gap: 1px;
+    text-align: center;
+    grid-template-areas: 
+    "celda1 celda1 celda2 celda2"
+    "celda3 celda4 celda4 celda4"
+    "celda5 celda5 celda5 celda5";
+}
+
+.ejercicio6 div {
+    background-color: #5f717d;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.ejercicio6 div.celda1 {
+    grid-area: celda1;
+}
+
+.ejercicio6 div.celda2 {
+    grid-area: celda2;
+}
+
+.ejercicio6 div.celda3 {
+    grid-area: celda3;
+}
+
+.ejercicio6 div.celda4 {
+    grid-area: celda4;
+}
+
+.ejercicio6 div.celda5 {
+    grid-area: celda5;
+}
+
+/* EJERCICIO 7 */
+.ejercicio7 {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    gap: 1px;
+    text-align: center;
+    grid-template-areas: 
+    ". celda1 celda1 celda1"
+    "celda2 celda3 celda3 celda3"
+    "celda4 celda4 celda4 celda4";
+}
+
+.ejercicio7 div {
+    background-color: #5f717d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.ejercicio7 div.celda1 {
+    grid-area: celda1;
+    background-color: #9c5e11;
+}
+
+.ejercicio7 div.celda2 {
+    grid-area: celda2;
+}
+
+.ejercicio7 div.celda3 {
+    grid-area: celda3;
+}
+
+.ejercicio7 div.celda4 {
+    grid-area: celda4;
+    background: #4f5151;
+}
+
+/* EJERCICIO 8 */
+.ejercicio8 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    text-align: center;
+}
+
+.ejercicio8 div {
+    background-color: #5f717d;
+    padding: 15px;
+    color: white;
+}
+
+.ejercicio8 div.celda1 {
+    order: 1
+}
+
+/* EJERCICIO 9 */
+.ejercicio9 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "celda1 celda4"
+    "celda2 celda5"
+    "celda3 celda6";
+    gap: 1px;
+    text-align: center;
+}
+
+.ejercicio9 div {
+    background-color: #5f717d;
+    padding: 15px;
+    color: white;
+}
+
+.ejercicio9 div.celda1 {
+    grid-area: celda1;
+}
+.ejercicio9 div.celda2 {
+    grid-area: celda2;
+}
+.ejercicio9 div.celda3 {
+    grid-area: celda3;
+}
+.ejercicio9 div.celda4 {
+    grid-area: celda4;
+}
+.ejercicio9 div.celda5 {
+    grid-area: celda5;
+}
+.ejercicio9 div.celda6 {
+    grid-area: celda6;
+}
+
+/* EJERCICIO 10 */
+.ejercicio10 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "celda1 celda2"
+    "celda3 celda4"
+    "celda5 celda4";
+    gap: 1px;
+    text-align: center;
+}
+
+.ejercicio10 div {
+    background-color: #5f717d;
+    padding: 15px;
+    color: white;
+}
+
+/* Grid Principal */
+.ejercicio10 div.celda1 {
+    grid-area: celda1;
+}
+.ejercicio10 div.celda2 {
+    grid-area: celda2;
+}
+.ejercicio10 div.celda3 {
+    grid-area: celda3;
+}
+.ejercicio10 div.celda4 {
+    grid-area: celda4;
+}
+.ejercicio10 div.celda5 {
+    grid-area: celda5;
+}
+
+/* Grid Anidado */
+.ejercicio10 .celda4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "lista1 lista1"
+    "lista2 lista3"
+    "lista4 lista5";
+    gap: 1px;
+}
+
+.ejercicio10 .celda4 div {
+    background-color: #d5d5f2;
+    color: #000;
+}
+
+.ejercicio10 .celda4 .lista1 {
+    grid-area: lista1;
+}
+.ejercicio10 .celda4 .lista2 {
+    grid-area: lista2;
+}
+.ejercicio10 .celda4 .lista3 {
+    grid-area: lista3;
+}
+.ejercicio10 .celda4 .lista4 {
+    grid-area: lista4;
+}
+.ejercicio10 .celda4 .lista5 {
+    grid-area: lista5;
+}
