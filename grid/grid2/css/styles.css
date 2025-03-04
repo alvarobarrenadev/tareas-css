@@ -1,0 +1,69 @@
+/* EJERCICIO 1 */
+section.ejercicio1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-image: url("../img/topography.svg"), linear-gradient(to right, #e14e6c, #8249b7);
+    gap: 5px;
+    padding: 10px;
+}
+
+[class^="caja"] {
+    background-color: #f6c844;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja6 {
+    grid-column: 1 / span 6; /* Empieza desde la columna 1 y ocupa 6 espacios */
+    grid-row: 2; /* Empieza desde la fila 1 y ocupa 1 espacio */
+    background-color: #6f94e6;
+}
+
+.caja8 {
+    grid-column: span 2;
+    background-color: #ed6d52;
+}
+
+.caja9, .caja27 {
+    grid-row: span 2;
+    background: #aff8a2;
+}
+
+.caja12 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+    background-color: #6f94e6;
+}
+
+.caja16 {
+    grid-column: span 2;
+    background-color: #ed6d52;
+}
+
+.caja18 {
+    grid-column: 5 / span 6;
+    grid-row: 4 / span 2;
+    background: #a5cc4f;
+}
+
+.caja24 {
+    grid-column: 2 / span 2;
+    background-color: #ed6d52;
+}
+
+.caja30 {
+    grid-column: 5 / span 6;
+    grid-row: 6;
+    background-color: #6f94e6;
+}
+
+.caja32 {
+    grid-column: 3 / span 2;
+    background-color: #ed6d52;
+}

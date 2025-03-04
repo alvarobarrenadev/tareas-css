@@ -1,0 +1,225 @@
+/* EJERCICIO 2 */
+body {
+    background-image: url("../img/topography.svg"), linear-gradient(to right, #f03b65, #8744c1);
+    font-size: 16px;
+    padding: 30px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas: 
+    "hero hero cta1"
+    "hero hero cta2";
+    /* border: 2px solid; */
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.hero {
+    grid-area: hero;
+    position: relative;
+    background-image: url("../img/taco.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 50px;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    background-color: #ffc600;
+    width: max-content; /* Para que el tamaño del contenedor sea el tamaño del texto */
+    padding: 5px 10px;
+}
+
+.hero p {
+    background-color: #ffc600;
+    width: max-content;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+.cta2 {
+    grid-area: cta2;
+}
+
+.cta1, .cta2 {
+    background-color: #ffc600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+.cta__price {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.cta__name {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.cta1:hover, .cta2:hover {
+    background-color: black;
+    color: #ffc600;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    margin-bottom: 25px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-content: space-around;
+}
+
+
+nav ul li {
+    flex: 1; /* Para que se distribuyan de manera equitativa */
+}
+
+nav ul li a {
+    display: block;
+    background-color: #ffc600;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: #ffc600;
+}
+
+/* DESTACADOS */
+main section.destacados {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.destacados article {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.destacados article p:first-child {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.destacados article h3 {
+    margin: 0;
+}
+
+.destacados article p.description {
+    color: #777777;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* DESTACADO */
+section.destacado {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    margin-bottom: 25px;
+}
+
+section.destacado img {
+    width: 400px;
+    height: auto;
+}
+
+.destacado__info {
+    max-width: 400px;
+}
+
+.destacado__info p {
+    font-weight: 600;
+}
+
+.destacado__info a {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffc600;
+    display: inline-block; /* Para poder darle padding */
+    padding: 15px;
+    /* font-weight: bold; */
+}
+
+/* INSTANT GRAMS */
+.instagram h2 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.instagram h2::after {
+    content: '';
+    background-image: 100px;
+    height: 10px;
+    display: block;
+    background-image: linear-gradient(to left, transparent, #ffc600);
+}
+
+.instagram h2::before {
+    content: '';
+    background-image: 100px;
+    height: 10px;
+    display: block;
+    background-image: linear-gradient(to right, transparent, #ffc600);
+}
+
+.instagram div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.instagram img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
