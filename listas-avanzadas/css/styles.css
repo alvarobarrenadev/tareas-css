@@ -1,0 +1,134 @@
+/* EJEMPLO 1 */
+ul.example1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    list-style: none;
+    width: 300px;
+}
+
+ul.example1 li {
+    padding: 10px 20px;
+}
+
+ul.example1 li+li {
+    border-top: 1px solid #e6e6e6;
+}
+
+ul.example1 a {
+    text-decoration: none;
+    color: #4e4e4e;
+}
+
+
+/* EJEMPLO 2 */
+ul.example2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    list-style: none;
+    width: 300px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+ul.example2 li.active a {
+    background-color: #1e5cf2;
+    color: white;
+}
+
+ul.example2 li+li {
+    border-top: 1px solid #e6e6e6;
+}
+
+ul.example2 a {
+    text-decoration: none;
+    color: #4e4e4e;
+    display: block;
+    padding: 10px 20px;
+}
+
+ul.example2 a:hover {
+    background-color: #1e5cf2;
+    color: white;
+}
+
+/* EJEMPLO 3 */
+ul.example3 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    list-style: none;
+    width: 300px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+ul.example3 li {
+    position: relative;
+}
+
+ul.example3 li+li {
+    border-top: 1px solid #e6e6e6;
+}
+
+ul.example3 a {
+    text-decoration: none;
+    color: #4e4e4e;
+    padding: 10px 20px;
+    display: block;
+}
+
+ul.example3 a span {
+    position: absolute;
+    right: 10px;
+    font-size: 10px;
+    display: inline-block;
+    padding: 2px 5px;
+    background-color: #1e5cf2;
+    color: white;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+ul.example3 li:hover a {
+    background-color: #1e5cf2;
+    color: white;
+}
+
+ul.example3 li:hover a span {
+    background-color: #e6e6e6;
+    color: #1e5cf2;
+}
+
+
+/* EJEMPLO 4 */
+ul.example4 {
+    list-style-image: url("../img/icons8-diabetes-16.png");
+}
+
+
+/* EJEMPLO 5 */
+ul.example5 {
+    counter-reset: step-counter;
+    list-style: none;
+}
+
+ul.example5 li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    background-color: black;
+    padding: 2px;
+    font-size: 10px;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    text-align: center;
+}
