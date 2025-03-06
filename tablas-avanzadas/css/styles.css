@@ -159,11 +159,12 @@ table.example5 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-spacing: 0;
     text-align: center;
+    border: 1px solid #5f13ef;
 }
 
 table.example5 tbody th,
 table.example5 tbody td {
-    border-bottom: 1px solid #b2b5c2;
+    border-bottom: 1px solid #a780f0;
 }
 
 table.example5 th,
@@ -174,16 +175,18 @@ table.example5 td {
 table.example5 thead th {
     background-color: #5f13ef;
     color: white;
-    font-size: 12px;
 }
 
-table.example5 tbody tr th:nth-child(odd),
-table.example5 tbody tr td:nth-child(odd){
+table.example5 tbody th {
     background-color: #e9ebf7;
 }
 
+table.example5 tbody tr td:nth-child(odd){
+    background-color: #f4f6fb;
+}
+
 table.example5 .btn {
-    /* display: inline-block; */
+    display: inline-block;
     background-color: #5f13ef;
     color: white;
     padding: 15px;
