@@ -1,0 +1,55 @@
+/* Menú principal */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #42a5f5; /* Color azul */
+    padding: 10px;
+    list-style: none;
+}
+
+/* Estilos de los elementos del menú */
+.menu li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+/* Estilos de los enlaces del menú */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+/* Submenú oculto por defecto */
+.desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    width: 200px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+/* Elementos del submenú */
+.desplegable li {
+    padding: 10px;
+}
+
+/* Enlaces del submenú */
+.desplegable a {
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+}
+
+/* Mostrar el submenú al pasar el cursor */
+.menu li:hover > .desplegable {
+    display: block;
+}
