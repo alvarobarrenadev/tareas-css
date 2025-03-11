@@ -1,0 +1,97 @@
+:is(.text-1, .text-2, .text-3, .text-4, .text-5) {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TEXTO 1 */
+.text-1 {
+    background-color: #6cfafc;
+    color: white;
+    text-shadow: 2px 2px 5px #4f7072;
+}
+
+/* TEXTO 2 */
+.text-2 {
+    background-color: #fff3cd;
+    color: white;
+    text-shadow: 5px 1px 0 #b8b2a0;
+}
+
+/* TEXTO 3 */
+.text-3 {
+    background-color: #6cfafc;
+    color: white;
+    text-shadow: 
+    -8px 8px 0 #61e0e6,
+    -15px 15px 0 #55c7cb,
+    -22px 22px 0 #4bbaba;
+}
+
+/* TEXTO 4 */
+.text-4 {
+    background-color: #fff3cd;
+    color: white;
+    text-shadow: 
+    0 8px 4px #888478,
+    0 15px 4px #b8b2a0,
+    0 22px 4px #cfc9b5;
+}
+
+/* TEXTO 5 */
+.text-5 {
+    background-color: #222222;
+    color: #161616;
+    text-shadow: 
+        3px 3px 5px rgba(0, 0, 0, 0.5),  /* Sombra exterior */
+        -3px -3px 5px rgba(255, 255, 255, 0.1); /* Simulación de sombra interna */
+}
+
+
+:is(.box-1, .box-2, .box-3, .box-4, .box-5) {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ced7ef;
+    color: #646566;
+    margin-left: 80px;
+}
+
+/* CAJA 1 */
+.box-1 {
+    box-shadow: 0 0 15px gray;
+}
+
+/* CAJA 2 */
+.box-2 {
+    box-shadow: 0 0 20px rgb(92, 92, 92) inset;
+}
+
+/* CAJA 3 */
+.box-3 {
+    box-shadow: 10px 10px 15px gray;
+}
+
+/* CAJA 4 */
+.box-4 {
+    box-shadow: -10px -10px 15px gray;
+}
+
+/* CAJA 5 */
+article:nth-child(5) {
+    margin-bottom: 50px;
+}
+
+.box-5 {
+    box-shadow: 25px 15px 0 gray;
+    margin-bottom: 10px;
+}
