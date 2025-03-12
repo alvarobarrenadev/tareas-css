@@ -1,55 +1,54 @@
-/* Menú principal */
-.menu {
-    display: flex;
-    justify-content: center;
-    background-color: #42a5f5; /* Color azul */
-    padding: 10px;
-    list-style: none;
-}
-
-/* Estilos de los elementos del menú */
-.menu li {
-    position: relative;
-    padding: 10px 20px;
-}
-
-/* Estilos de los enlaces del menú */
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    padding: 10px;
-}
-
-/* Submenú oculto por defecto */
-.desplegable {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: black;
-    width: 200px;
-    padding: 0;
-    list-style: none;
-    text-align: left;
-}
-
-/* Elementos del submenú */
-.desplegable li {
-    padding: 10px;
-}
-
-/* Enlaces del submenú */
-.desplegable a {
-    color: white;
+/* Estilos generales para el cuerpo de la página */
+body {
     font-size: 16px;
-    display: block;
-    padding: 10px;
+    margin: 0;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Mostrar el submenú al pasar el cursor */
-.menu li:hover > .desplegable {
+/* Estilos para la lista de navegación principal */
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+nav > ul li a {
     display: block;
+    background-color: #3787ce;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-weight: 600;
+}
+
+/* Cambios de estilo cuando el usuario pasa el cursor sobre los enlaces de la barra de navegación */
+nav > ul > li > a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para la lista desplegable */
+ul.dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+/* Muestra la lista desplegable cuando el usuario pasa el cursor sobre el elemento principal */
+nav > ul > li:hover ul.dropdown {
+    display: block;
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+ul.dropdown a {
+    background: #000;
+}
+
+/* Cambios de estilo cuando el usuario pasa el cursor sobre los enlaces del menú desplegable */
+ul.dropdown a:hover {
+    background-color: #3787ce;
 }

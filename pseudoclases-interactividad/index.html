@@ -15,17 +15,26 @@
         </header>
 
         <main>
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Our Services</a>
-                    <ul class="desplegable">
-                        <li><a href="">Marketing</a></li>
-                        <li><a href="">Social Media</a></li>
-                        <li><a href="">Web Design</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
+            <!-- Emmet: nav>ul>(li>a{Home})+(li>a{Our services})+(li>a{Contact Us}) -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our services</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Social Media</a></li>
+                            <li><a href="#">Web design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Social Media</a></li>
+                            <li><a href="#">Web design</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </main>
     </body>
 </html>
