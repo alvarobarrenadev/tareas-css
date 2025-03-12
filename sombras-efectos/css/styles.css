@@ -1,26 +1,26 @@
 :is(.text-1, .text-2, .text-3, .text-4, .text-5) {
-    width: 400px;
-    height: 200px;
+    width: min-content;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 110px;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 /* TEXTO 1 */
 .text-1 {
     background-color: #6cfafc;
     color: white;
-    text-shadow: 2px 2px 5px #4f7072;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* TEXTO 2 */
 .text-2 {
     background-color: #fff3cd;
     color: white;
-    text-shadow: 5px 1px 0 #b8b2a0;
+    text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* TEXTO 3 */
@@ -48,8 +48,7 @@
     background-color: #222222;
     color: #161616;
     text-shadow: 
-        3px 3px 5px rgba(0, 0, 0, 0.5),  /* Sombra exterior */
-        -3px -3px 5px rgba(255, 255, 255, 0.1); /* Simulación de sombra interna */
+        1px 1px 3px rgba(255, 255, 255, 0.1);
 }
 
 
