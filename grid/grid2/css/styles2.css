@@ -1,6 +1,13 @@
 /* EJERCICIO 2 */
+
+:root {
+    --amarillo: #ffc600;
+    --gradiente1: #f03b65;
+    --gradiente2: #8744c1;
+}
+
 body {
-    background-image: url("../img/topography.svg"), linear-gradient(to right, #f03b65, #8744c1);
+    background-image: url("../img/topography.svg"), linear-gradient(to right, var(--gradiente1), var(--gradiente2));
     font-size: 16px;
     padding: 30px;
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,13 +44,13 @@ header {
 }
 
 .hero h1 {
-    background-color: #ffc600;
+    background-color: var(--amarillo);
     width: max-content; /* Para que el tamaño del contenedor sea el tamaño del texto */
     padding: 5px 10px;
 }
 
 .hero p {
-    background-color: #ffc600;
+    background-color: var(--amarillo);
     width: max-content;
     padding: 5px 10px;
     font-weight: bold;
@@ -58,7 +65,7 @@ header {
 }
 
 .cta1, .cta2 {
-    background-color: #ffc600;
+    background-color: var(--amarillo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +91,7 @@ header {
 
 .cta1:hover, .cta2:hover {
     background-color: black;
-    color: #ffc600;
+    color: var(--amarillo);
 }
 
 /* MENÚ DE NAVEGACIÓN */
@@ -108,7 +115,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    background-color: #ffc600;
+    background-color: var(--amarillo);
     color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -119,7 +126,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: black;
-    color: #ffc600;
+    color: var(--amarillo);
 }
 
 /* DESTACADOS */
@@ -181,7 +188,7 @@ section.destacado img {
 .destacado__info a {
     text-decoration: none;
     color: #000;
-    background-color: #ffc600;
+    background-color: var(--amarillo);
     display: inline-block; /* Para poder darle padding */
     padding: 15px;
     /* font-weight: bold; */
@@ -201,7 +208,7 @@ section.destacado img {
     background-image: 100px;
     height: 10px;
     display: block;
-    background-image: linear-gradient(to left, transparent, #ffc600);
+    background-image: linear-gradient(to left, transparent, var(--amarillo));
 }
 
 .instagram h2::before {
@@ -209,7 +216,7 @@ section.destacado img {
     background-image: 100px;
     height: 10px;
     display: block;
-    background-image: linear-gradient(to right, transparent, #ffc600);
+    background-image: linear-gradient(to right, transparent, var(--amarillo));
 }
 
 .instagram div {
